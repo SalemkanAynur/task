@@ -1,0 +1,70 @@
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+&__wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &__label{
+    position: absolute;
+    z-index: 100;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color:#6E757C;
+    top:3%;
+    left: 4%;
+  }
+}
+  &__input{
+    border: 1px solid  #F4F5F6;
+    border-radius: 16px;
+    padding: 19px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: $backgrond-grey;
+    position: relative;
+
+    &_icon{
+      width: 20px;
+      height: 20px;
+      transform: translateY(-50%);
+      position: absolute;
+      right: 5%;
+      top:50%;
+    }
+
+    &:hover{
+      border-color: #6E757C;
+    }
+
+    &:active{
+      border-color: #6E757C;
+    }
+
+    &:invalid {
+      border-color: red;
+    }
+  }
+
+  &__error-message{
+    font-size: 12px;
+    line-height: 16px;
+    color: red;
+  }
+}
+
+
+.input-container__input[type=text]:disabled {
+  color: #6E757C;
+  background-color: $backgrond-grey;
+}
+
+.input-container__input[type=color]:disabled {
+  color: #6E757C;
+  background-color: $backgrond-grey;
+}
+

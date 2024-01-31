@@ -1,0 +1,71 @@
+
+.btn {
+  padding: 0 12px;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  border-radius: 16px;
+  &:hover {
+    transition: 0.3s;
+  }
+
+  &-main {
+    padding: 8px;
+    width: 100%;
+    border: none;
+    background-color: #1976D2;
+    color: white;
+    height: 44px;
+
+    &:hover {
+      transition: width 0.3s ease, height 0.3s ease;
+      cursor: pointer;
+    }
+
+    &-full {
+      width: 100%;
+    }
+  }
+  &-mains {
+    padding: 12px 16px;
+    background-color: red;
+    color: white;
+
+    &:hover {
+      transition: width 0.3s ease, height 0.3s ease;
+      cursor: pointer;
+    }
+    &-full {
+      width: 100%;
+    }
+  }
+
+  &-cancel {
+    padding: 12px;
+    width: 100%;
+    background-color: #EDEEEF;
+    color: #1A1F23;
+  }
+  &-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "SF Pro Text Semibold", sans-serif;
+
+    &:hover {
+      transition: 0.3s;
+      background: white;
+    }
+    &:active{
+      color:white;
+    }
+  }
+
+  &.btn-disabled {
+    opacity: 0.5;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+}

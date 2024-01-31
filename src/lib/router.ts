@@ -1,20 +1,13 @@
 import { createRouter, createWebHistory, Router, RouteRecordRaw } from "vue-router";
 
-import Index from "@/pages/Index.vue";
-import Example from "@/pages/Example.vue";
+import MainPage from "@/pages/MainPage/index.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
-    component: Index,
+    component: MainPage,
     path: "/",
     name: "index"
   },
-  {
-    component: Example,
-    path: "/example",
-    name: "example",
-    meta: { title: "Examples" }
-  }
 ];
 
 const router: Router = createRouter({
@@ -23,7 +16,7 @@ const router: Router = createRouter({
 });
 
 router.afterEach((to) => {
-  const baseTitle = "Vue + TypeScript + Vite";
+  const baseTitle = "Task";
 
   if (to.name === "index") {
     document.title = baseTitle;

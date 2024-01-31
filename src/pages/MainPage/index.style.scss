@@ -1,0 +1,29 @@
+.blocks {
+width: 100%;
+&-list{
+  flex: 1;
+  border-right: 1px solid #ccc;
+}
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+.select{
+  border: 1px solid  #F4F5F6;
+  border-radius: 16px;
+  padding: 19px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 200px;
+  background-color: $backgrond-grey;
+  position: relative;
+}
